@@ -51,8 +51,8 @@ def login_koyeb(email, password, max_retries=5):
                     print(f"第 {retries + 1} 次登录失败: {error_text}")
                     retries += 1
                     if retries < max_retries:
-                        print("等待 5 秒后重试...")
-                        time.sleep(5)  # 等待 5 秒后重试
+                        print("等待 1 秒后重试...")
+                        time.sleep(1)  # 等待 5 秒后重试
                     continue
             except:
                 # 如果没有错误，检查是否跳转到仪表板页面
